@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ResultsController;
+use App\Http\Controllers\VoteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
+
+Route::get('/vote', [VoteController::class, 'create'])
+    ->name('vote.form');
+
+Route::post('/vote', [VoteController::class, 'store'])
+    ->name('vote.submit');
+
+Route::get('/results', [ResultsController::class, 'create'])
+    ->name('results');
