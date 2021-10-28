@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Vote;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreVoteRequest extends FormRequest
@@ -13,7 +14,7 @@ class StoreVoteRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return Vote::time_left() > 0;
     }
 
     /**

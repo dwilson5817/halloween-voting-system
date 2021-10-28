@@ -125,6 +125,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Results Unlock Time
+    |--------------------------------------------------------------------------
+    |
+    | The point at which the results page should be made available. The app
+    | will display a countdown on the results page until this point. The
+    | voting page will also be closed, and then no new votes accepted.
+    |
+    */
+
+    'results_time' => env('RESULTS_TIME', '1970-01-01 00:00'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |

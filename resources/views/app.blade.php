@@ -43,9 +43,7 @@
 <footer class="container my-3">
     <div class="card">
         <div class="card-body">
-            This website is open-source and licenced under version 3 of the GNU General Public Licence,
-            <a href="https://gitlab.dylanwilson.dev/dylan/halloween-voting-system" class="text-decoration-none">click
-                here to see the source code</a>.  Copyright &copy; 2021 Dylan Wilson.
+            GPL v3 (<a href="https://gitlab.dylanwilson.dev/dylan/halloween-voting-system" class="text-decoration-none">source</a>).
         </div>
     </div>
 </footer>

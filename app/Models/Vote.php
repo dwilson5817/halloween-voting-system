@@ -16,4 +16,15 @@ class Vote extends Model
     {
         return $this->belongsTo(Person::class);
     }
+
+    /**
+     * Get the time until the results page unlocks.
+     */
+    public static function time_left()
+    {
+        date_default_timezone_set(config('app.timezone'));
+        $timestamp = strtotime(config('app.results_time'));
+
+        return ($timestamp * 1000) - round(microtime(true) * 1000);
+    }
 }
