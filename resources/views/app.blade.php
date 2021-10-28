@@ -43,7 +43,7 @@
 <footer class="container my-3">
     <div class="card">
         <div class="card-body">
-            GPL v3 (<a href="https://gitlab.dylanwilson.dev/dylan/halloween-voting-system" class="text-decoration-none">source</a>).
+            MIT license (<a href="https://gitlab.dylanwilson.dev/dylan/halloween-voting-system" class="text-decoration-none">source</a>).
         </div>
     </div>
 </footer>
