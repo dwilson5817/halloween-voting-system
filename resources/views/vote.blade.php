@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    Vote
+@endsection
+
 @section('content')
     <div class="container mt-3">
         @include('time_left')

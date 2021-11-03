@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    Results
+@endsection
+
 @section('content')
     <div class="container">
         @include('time_left')
